@@ -1,0 +1,27 @@
+#add-standard-court-order-button {
+  position: relative;
+  div.standard-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4a6cf7;
+    text-align: left;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Style the dropdown links */
+  div.standard-dropdown-content.show {
+    display: block;
+    height: fit-content;
+    background-color: pink;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  /* On hover, change the background color */
+  div.standard-dropdown-content:hover {
+    background-color: #ddd;
+  }
+}

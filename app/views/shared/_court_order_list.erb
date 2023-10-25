@@ -33,4 +33,12 @@
   <button id="add-court-order-button" type="button" class="main-btn primary-btn btn-sm btn-hover" data-action="extended-nested-form#add">
     <i class="lni lni-plus mr-10"></i> Add a court order
   </button>
+  <button id="add-standard-court-order-button" type="button" class="main-btn primary-btn btn-sm btn-hover">
+    <i class="lni lni-plus mr-10"></i> Add a standard court order
+    <div class="standard-dropdown-content">
+      <% CaseCourtOrder::STANDARD_COURT_ORDERS.each do |option| %>
+       <div class="option" data-action="extended-nested-form#add" data-option="<%= option %>"><%= option %></div>
+      <% end %>
+    </div>
+  </button>
 </div>
